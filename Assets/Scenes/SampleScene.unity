@@ -364,6 +364,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2083958537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4667686069836386334, guid: 209e736496ef594489a97c868231ee4b, type: 3}
+  m_PrefabInstance: {fileID: 1071085392115329540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2083958542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083958537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 223d0f790ac94ff42ba2b898e429393f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerShoot
+  bulletPrefab: {fileID: 4667686069836386334, guid: 209e736496ef594489a97c868231ee4b, type: 3}
+  ammoAmmount: 50
+  currentAmmo: 0
+  bulletSpeed: 10
+--- !u!114 &2083958543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083958537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8ed0b9e8e0c415498cdb4204cd565f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletScript
 --- !u!1001 &1071085392115329540
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -419,7 +452,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4667686069836386334, guid: 209e736496ef594489a97c868231ee4b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2083958543}
+    - targetCorrespondingSourceObject: {fileID: 4667686069836386334, guid: 209e736496ef594489a97c868231ee4b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2083958542}
   m_SourcePrefab: {fileID: 100100000, guid: 209e736496ef594489a97c868231ee4b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
