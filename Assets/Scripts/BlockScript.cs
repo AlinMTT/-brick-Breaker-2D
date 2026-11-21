@@ -1,4 +1,4 @@
-using Unity.AppUI.UI;
+using TMPro;
 using UnityEngine;
 
 public class BlockScript : MonoBehaviour
@@ -11,7 +11,7 @@ public class BlockScript : MonoBehaviour
     }
     void Update()
     {
-        blocText.GetComponent<Text>().text  = healthPoints.ToString();
+        blocText.GetComponent<TMP_Text>().text = healthPoints.ToString();   
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
